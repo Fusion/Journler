@@ -2,33 +2,36 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
-		<string key="IBDocument.SystemVersion">11A511</string>
-		<string key="IBDocument.InterfaceBuilderVersion">1615</string>
-		<string key="IBDocument.AppKitVersion">1138</string>
-		<string key="IBDocument.HIToolboxVersion">566.00</string>
+		<string key="IBDocument.SystemVersion">12C54</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
+		<string key="IBDocument.AppKitVersion">1187.34</string>
+		<string key="IBDocument.HIToolboxVersion">625.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">1615</string>
+			<string key="NS.object.0">2840</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-			<string>NSScroller</string>
 			<string>NSArrayController</string>
 			<string>NSButton</string>
-			<string>NSTableHeaderView</string>
-			<string>NSScrollView</string>
-			<string>NSTextFieldCell</string>
 			<string>NSButtonCell</string>
-			<string>NSTableView</string>
 			<string>NSCustomObject</string>
+			<string>NSScrollView</string>
+			<string>NSScroller</string>
+			<string>NSTableColumn</string>
+			<string>NSTableHeaderView</string>
+			<string>NSTableView</string>
+			<string>NSTextField</string>
+			<string>NSTextFieldCell</string>
 			<string>NSView</string>
 			<string>NSWindowTemplate</string>
-			<string>NSTextField</string>
-			<string>NSTableColumn</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 		</array>
-		<dictionary class="NSMutableDictionary" key="IBDocument.Metadata"/>
+		<object class="NSMutableDictionary" key="IBDocument.Metadata">
+			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
+			<integer value="1" key="NS.object.0"/>
+		</object>
 		<array class="NSMutableArray" key="IBDocument.RootObjects" id="332006270">
 			<object class="NSCustomObject" id="490037882">
 				<string key="NSClassName">LoadErrorReporter</string>
@@ -54,7 +57,7 @@
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<string key="NSWindowContentMinSize">{213, 107}</string>
 				<object class="NSView" key="NSWindowView" id="839798575">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSScrollView" id="1066770716">
@@ -71,6 +74,8 @@
 											<string key="NSFrameSize">{537, 159}</string>
 											<reference key="NSSuperview" ref="594818752"/>
 											<bool key="NSEnabled">YES</bool>
+											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+											<bool key="NSControlAllowsExpansionToolTips">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="83671686">
 												<reference key="NSNextResponder" ref="327019629"/>
 												<int key="NSvFlags">256</int>
@@ -91,7 +96,7 @@
 													<double key="NSMinWidth">100.2216796875</double>
 													<double key="NSMaxWidth">1000</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
-														<int key="NSCellFlags">75628096</int>
+														<int key="NSCellFlags">75497536</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Error Information</string>
 														<object class="NSFont" key="NSSupport" id="26">
@@ -114,7 +119,7 @@
 														</object>
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="711079630">
-														<int key="NSCellFlags">337772096</int>
+														<int key="NSCellFlags">337641536</int>
 														<int key="NSCellFlags2">2560</int>
 														<reference key="NSSupport" ref="26"/>
 														<reference key="NSControlView" ref="524238993"/>
@@ -149,7 +154,7 @@
 													<double key="NSMinWidth">28.11083984375</double>
 													<double key="NSMaxWidth">1000</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
-														<int key="NSCellFlags">75628096</int>
+														<int key="NSCellFlags">75497536</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Kind</string>
 														<reference key="NSSupport" ref="26"/>
@@ -162,7 +167,7 @@
 														<reference key="NSTextColor" ref="116559454"/>
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="67969028">
-														<int key="NSCellFlags">337772032</int>
+														<int key="NSCellFlags">337641472</int>
 														<int key="NSCellFlags2">0</int>
 														<reference key="NSSupport" ref="26"/>
 														<reference key="NSControlView" ref="524238993"/>
@@ -224,6 +229,7 @@
 									<string key="NSFrame">{{538, 17}, {11, 159}}</string>
 									<reference key="NSSuperview" ref="1066770716"/>
 									<bool key="NSEnabled">YES</bool>
+									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 									<int key="NSsFlags">256</int>
 									<reference key="NSTarget" ref="1066770716"/>
 									<string key="NSAction">_doScroller:</string>
@@ -234,6 +240,7 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{-100, -100}, {427, 11}}</string>
 									<reference key="NSSuperview" ref="1066770716"/>
+									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 									<int key="NSsFlags">257</int>
 									<reference key="NSTarget" ref="1066770716"/>
 									<string key="NSAction">_doScroller:</string>
@@ -262,8 +269,10 @@
 							<reference key="NSHScroller" ref="867381532"/>
 							<reference key="NSContentView" ref="594818752"/>
 							<reference key="NSHeaderClipView" ref="327019629"/>
-							<reference key="NSCornerView" ref="324698617"/>
 							<bytes key="NSScrollAmts">QSAAAEEgAABCCAAAQggAAA</bytes>
+							<double key="NSMinMagnification">0.25</double>
+							<double key="NSMaxMagnification">4</double>
+							<double key="NSMagnification">1</double>
 						</object>
 						<object class="NSButton" id="372363665">
 							<reference key="NSNextResponder" ref="839798575"/>
@@ -272,16 +281,16 @@
 							<reference key="NSSuperview" ref="839798575"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="789315628">
-								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">Dismiss</string>
 								<object class="NSFont" key="NSSupport" id="20467334">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">13</double>
-									<int key="NSfFlags">1044</int>
+									<int key="NSfFlags">16</int>
 								</object>
 								<reference key="NSControlView" ref="372363665"/>
-								<int key="NSButtonFlags">-2038284033</int>
+								<int key="NSButtonFlags">-2038284288</int>
 								<int key="NSButtonFlags2">1</int>
 								<reference key="NSAlternateImage" ref="20467334"/>
 								<string key="NSAlternateContents"/>
@@ -289,6 +298,7 @@
 								<int key="NSPeriodicDelay">200</int>
 								<int key="NSPeriodicInterval">25</int>
 							</object>
+							<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 						</object>
 						<object class="NSTextField" id="183643368">
 							<reference key="NSNextResponder" ref="839798575"/>
@@ -297,9 +307,9 @@
 							<reference key="NSSuperview" ref="839798575"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="477134382">
-								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">272629760</int>
-								<string key="NSContents">Journler encountered errors while loading your journal. Some of your entries, folders or blog settings may be corrupt.</string>
+								<string key="NSContents">JournlerAgain encountered errors while loading your journal. Some of your entries, folders or blog settings may be corrupt.</string>
 								<reference key="NSSupport" ref="20467334"/>
 								<reference key="NSControlView" ref="183643368"/>
 								<object class="NSColor" key="NSBackgroundColor">
@@ -310,6 +320,7 @@
 								</object>
 								<reference key="NSTextColor" ref="378539601"/>
 							</object>
+							<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 						</object>
 						<object class="NSButton" id="480220516">
 							<reference key="NSNextResponder" ref="839798575"/>
@@ -318,12 +329,12 @@
 							<reference key="NSSuperview" ref="839798575"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="60995921">
-								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents"/>
 								<reference key="NSSupport" ref="20467334"/>
 								<reference key="NSControlView" ref="480220516"/>
-								<int key="NSButtonFlags">-2038284033</int>
+								<int key="NSButtonFlags">-2038284288</int>
 								<int key="NSButtonFlags2">33</int>
 								<reference key="NSAlternateImage" ref="20467334"/>
 								<string key="NSAlternateContents"/>
@@ -333,10 +344,10 @@
 								<int key="NSPeriodicDelay">200</int>
 								<int key="NSPeriodicInterval">25</int>
 							</object>
+							<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 						</object>
 					</array>
 					<string key="NSFrameSize">{590, 304}</string>
-					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
 				<string key="NSMinSize">{213, 129}</string>
@@ -366,14 +377,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="330453092"/>
-						<reference key="destination" ref="490037882"/>
-					</object>
-					<int key="connectionID">14</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">errorTable</string>
 						<reference key="source" ref="490037882"/>
 						<reference key="destination" ref="524238993"/>
@@ -389,28 +392,36 @@
 					<int key="connectionID">16</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">contentArray: errorInfo</string>
-						<reference key="source" ref="661108689"/>
-						<reference key="destination" ref="490037882"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="661108689"/>
-							<reference key="NSDestination" ref="490037882"/>
-							<string key="NSLabel">contentArray: errorInfo</string>
-							<string key="NSBinding">contentArray</string>
-							<string key="NSKeyPath">errorInfo</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">18</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">errorController</string>
 						<reference key="source" ref="490037882"/>
 						<reference key="destination" ref="661108689"/>
 					</object>
 					<int key="connectionID">19</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showHelp:</string>
+						<reference key="source" ref="490037882"/>
+						<reference key="destination" ref="480220516"/>
+					</object>
+					<int key="connectionID">27</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="330453092"/>
+						<reference key="destination" ref="490037882"/>
+					</object>
+					<int key="connectionID">14</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="524238993"/>
+						<reference key="destination" ref="490037882"/>
+					</object>
+					<int key="connectionID">25</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -429,20 +440,20 @@
 					<int key="connectionID">22</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="524238993"/>
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">contentArray: errorInfo</string>
+						<reference key="source" ref="661108689"/>
 						<reference key="destination" ref="490037882"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="661108689"/>
+							<reference key="NSDestination" ref="490037882"/>
+							<string key="NSLabel">contentArray: errorInfo</string>
+							<string key="NSBinding">contentArray</string>
+							<string key="NSKeyPath">errorInfo</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
 					</object>
-					<int key="connectionID">25</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">showHelp:</string>
-						<reference key="source" ref="490037882"/>
-						<reference key="destination" ref="480220516"/>
-					</object>
-					<int key="connectionID">27</int>
+					<int key="connectionID">18</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">

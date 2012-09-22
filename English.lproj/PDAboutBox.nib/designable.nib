@@ -2,31 +2,34 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
-		<string key="IBDocument.SystemVersion">11A511</string>
-		<string key="IBDocument.InterfaceBuilderVersion">1615</string>
-		<string key="IBDocument.AppKitVersion">1138</string>
-		<string key="IBDocument.HIToolboxVersion">566.00</string>
+		<string key="IBDocument.SystemVersion">12C54</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
+		<string key="IBDocument.AppKitVersion">1187.34</string>
+		<string key="IBDocument.HIToolboxVersion">625.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">1615</string>
+			<string key="NS.object.0">2840</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-			<string>NSView</string>
-			<string>NSTextField</string>
-			<string>NSWindowTemplate</string>
-			<string>NSScrollView</string>
-			<string>NSTextFieldCell</string>
+			<string>NSCustomObject</string>
 			<string>NSCustomView</string>
-			<string>NSTextView</string>
 			<string>NSImageCell</string>
 			<string>NSImageView</string>
+			<string>NSScrollView</string>
 			<string>NSScroller</string>
-			<string>NSCustomObject</string>
+			<string>NSTextField</string>
+			<string>NSTextFieldCell</string>
+			<string>NSTextView</string>
+			<string>NSView</string>
+			<string>NSWindowTemplate</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 		</array>
-		<dictionary class="NSMutableDictionary" key="IBDocument.Metadata"/>
+		<object class="NSMutableDictionary" key="IBDocument.Metadata">
+			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
+			<integer value="1" key="NS.object.0"/>
+		</object>
 		<array class="NSMutableArray" key="IBDocument.RootObjects" id="313048121">
 			<object class="NSCustomObject" id="9922507">
 				<string key="NSClassName">PDAboutBoxController</string>
@@ -72,9 +75,11 @@
 									</set>
 									<string key="NSFrame">{{17, 72}, {128, 128}}</string>
 									<reference key="NSSuperview" ref="435396766"/>
+									<reference key="NSWindow"/>
+									<reference key="NSNextKeyView" ref="48868220"/>
 									<bool key="NSEnabled">YES</bool>
 									<object class="NSImageCell" key="NSCell" id="737106656">
-										<int key="NSCellFlags">130560</int>
+										<int key="NSCellFlags">134217728</int>
 										<int key="NSCellFlags2">33554432</int>
 										<object class="NSCustomResource" key="NSContents">
 											<string key="NSClassName">NSImage</string>
@@ -85,6 +90,7 @@
 										<int key="NSStyle">0</int>
 										<bool key="NSAnimates">NO</bool>
 									</object>
+									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 									<bool key="NSEditable">YES</bool>
 								</object>
 								<object class="NSTextField" id="48868220">
@@ -92,9 +98,11 @@
 									<int key="NSvFlags">256</int>
 									<string key="NSFrame">{{17, 45}, {128, 19}}</string>
 									<reference key="NSSuperview" ref="435396766"/>
+									<reference key="NSWindow"/>
+									<reference key="NSNextKeyView" ref="148997526"/>
 									<bool key="NSEnabled">YES</bool>
 									<object class="NSTextFieldCell" key="NSCell" id="819601140">
-										<int key="NSCellFlags">67239424</int>
+										<int key="NSCellFlags">67108864</int>
 										<int key="NSCellFlags2">138412032</int>
 										<string key="NSContents">AppName</string>
 										<object class="NSFont" key="NSSupport">
@@ -122,15 +130,18 @@
 											</object>
 										</object>
 									</object>
+									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 								</object>
 								<object class="NSTextField" id="148997526">
 									<reference key="NSNextResponder" ref="435396766"/>
 									<int key="NSvFlags">256</int>
 									<string key="NSFrame">{{14, 13}, {134, 28}}</string>
 									<reference key="NSSuperview" ref="435396766"/>
+									<reference key="NSWindow"/>
+									<reference key="NSNextKeyView" ref="681481965"/>
 									<bool key="NSEnabled">YES</bool>
 									<object class="NSTextFieldCell" key="NSCell" id="643536648">
-										<int key="NSCellFlags">67239424</int>
+										<int key="NSCellFlags">67108864</int>
 										<int key="NSCellFlags2">138412032</int>
 										<string key="NSContents">&lt;&lt; Version &gt;&gt;</string>
 										<object class="NSFont" key="NSSupport">
@@ -142,6 +153,7 @@
 										<reference key="NSBackgroundColor" ref="908667048"/>
 										<reference key="NSTextColor" ref="381259269"/>
 									</object>
+									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 								</object>
 								<object class="NSScrollView" id="681481965">
 									<reference key="NSNextResponder" ref="435396766"/>
@@ -154,46 +166,54 @@
 												<object class="NSTextView" id="1030702977">
 													<reference key="NSNextResponder" ref="436081782"/>
 													<int key="NSvFlags">2322</int>
-													<string key="NSFrameSize">{303, 975}</string>
+													<string key="NSFrameSize">{314, 1183}</string>
 													<reference key="NSSuperview" ref="436081782"/>
+													<reference key="NSWindow"/>
+													<reference key="NSNextKeyView" ref="57579726"/>
 													<object class="NSTextContainer" key="NSTextContainer" id="1012408885">
 														<object class="NSLayoutManager" key="NSLayoutManager">
 															<object class="NSTextStorage" key="NSTextStorage">
 																<object class="NSMutableString" key="NSString">
-																	<bytes key="NS.bytes">Sm91cm5sZXIKQnkgUGhpbGlwIERvdwoKTWFueSB0aGFua3MgdG8gbWFueSBpbmRpdmlkdWFscyBmb3Ig
-dGhlaXIgaWRlYXMsIHN1cHBvcnQsIGNvbnRyaWJ1dGlvbnMgYW5kIHB1YmxpY2x5IGF2YWlsYWJsZSB3
-b3JrLgoKSm91cm5sZXIgdXNlcyB0aGUgZm9sbG93aW5nIG9wZW4gc291cmNlIHNvZnR3YXJlOgoKCeKA
-oglSQlNwbGl0VmlldyBieSBSYWluZXIgQnJvY2tlcmhvZmYKCeKAoglMSktpdCBieSBCZW5qYW1pbiBQ
-ZXRlciBSYWdoZWIKCeKAoglJRDMgRnJhbWV3b3JrIGJ5IENocmlzIERyZXcKCeKAoglYTUxSUENDb2Nv
-YSBieSBCcmVudCBTaW1tb25zCgnigKIJQ1VSTEhhbmRsZStleHRyYXMgYnkgRGFuIFdvb2QKCeKAoglU
-aGUgTEFNRSBlbmNvZGVyIGJ5IHRoZSBsYW1lIGdyb3VwIGF0IG1wM2Rldi5vcmcKCeKAoglUaGUgTEFN
-RSBGcmFtZXdvcmsgYW5kIFF1aWNrdGltZSBDb21wb25lbnQgYnkgTHlubiBQeWUKCeKAoglOREFsaWFz
-IGJ5IE5hdGhhbiBEYXkKCeKAoglLRkFwcGxlU2NyaXB0IEFkZGl0aW9ucyBieSBLZW4gRmVycnkKCeKA
-oglpTWVkaWFCcm93c2VyIGJ5IEdyZWcgSHVsYW5kcyBhbmQgdGhlIGNyZXcKCeKAoglMMGlQb2QgYnkg
-RW1hbnVlbGUgVnVsY2FubwoJ4oCiCUNvY29hU2VxdWVuY2VHcmFiYmVyIGJ5IFRpbSBPbWVybmljawoJ
-4oCiCVNwYXJrbGUgZnJhbWV3b3JrIGJ5IEFuZHkgTWF0dXNjaGFrCgnigKIJQ29vbCB3aW5kb3dzIGFu
-ZCBvdGhlciB2aXN1YWwgY2FuZHkgYnkgTWF0dCBHZW1tZWxsCgnigKIJTW9yZSBjb29sIHdpbmRvd3Mg
-YW5kIGNhbmR5IGJ5IENoYWQgV2VpZGVyCgnigKIJTVVQaG90b1ZpZXcgYnkgQmxha2UgU2VlbHkKCeKA
-oglUaGUgUGFudG9taW1lIGZyYW1ld29yayBieSBMdWRvdmljIE1hcmNvdHRlCgnigKIJVUtLUXVldWUg
-YnkgTS4gVWxpIEt1c3RlcmVyCgnigKIJR1RSZXNvdXJjZUZvcmsgYnkgSm9uYXRoYW4gR3J5bnNwYW4K
-CeKAoglLQldvcmRDb3VudGluZ1RleHRTdG9yYWdlIGJ5IEtlaXRoIEJsb3VudAoKQSB2ZXJ5IHNwZWNp
-YWwgdGhhbmtzIHRvIHRoZSBmb2xsb3dpbmcgZm9yIHRoZWlyIGNvbnRyaWJ1dGlvbnM6IAoKVHJhbnNs
-YXRvcnMKCeKAoglEYW5pc2ggYnkgUHJlYmVuIE5pZWxzZW4gYW5kIFRva2UgRWJiZXNlbgoJ4oCiCUdl
-cm1hbiBieSBBbmRyZWFzIEjDpG5lIGFuZCBSZWluZXIgQmF1cgoJ4oCiCUFkZGl0aW9uYWwgbG9jYWxp
-emF0aW9ucyBhcmUgZm9ydGhjb21pbmcKCldlYiBQYWdlOiBFdmFuIEFnZWUKSm91cm5sZXIgSWNvbjog
-TWlrZSBSb2hkZQpEaXNrIEltYWdlOiBLZXZpbiBWYWVzZW4KCklkZWFzLCBCZXRhIFRlc3RlcnMgYW5k
-IENvbnRyaWJ1dG9ycwoJ4oCiCVNhdmFubmEKCeKAoglUZXJyeSBIYXRtYWtlcgoJ4oCiCUpheSBTaW1z
-CgnigKIJQW5uZWxpZXNlIEFtYWNoZXIKCeKAoglLZWl0YSBFbmRvCgnigKIJTWFydGluIEthaXNlcgoJ
-4oCiCVJlaW5lciBCYXVyCgnigKIJUmVpbmFyZCBTY2htaXR6CgnigKIJU3RldmVuIEpheSBDb2hlbgoJ
-4oCiCUdyw6lnb2lyZSBEZWx1YnJpYQoJ4oCiCWNvcm11bGxpb25AbWFjLmNvbQoJ4oCiCUFteSBVbnJ1
-aAoJ4oCiCVRvbnkgU3RpbnNvbgoJ4oCiCU5pa29sYXMgTGF1ZmVyLUVkZWwKCeKAoglNaWtlIFdlbGZs
-CgnigKIJSm9zw6kgRmVybmFuZG8gSGVycmVyYQoJ4oCiCUFwYXJhaml0YSBGaXNobWFuCgnigKIJQWRh
-bSBCZWxsCgpMZWdhbCAKSm91cm5sZXIgY29tZXMgd2l0aCBubyB3YXJyYW50eSwgbmVpdGhlciBleHBy
-ZXNzZWQgbm9yIGltcGxpZWQuIEhhdmUgZnVuIGFuZCBkb24ndCBzdWUgbWUuCgpDb21tZXJjaWFsIGRp
-c3RyaWJ1dGlvbiBvZiBKb3VybmxlciBpcyByZXN0cmljdGVkLiBQbGVhc2UgY29udGFjdCBzYWxlc0Bq
-b3Vybmxlci5jb20gZm9yIGxpY2Vuc2luZyB0ZXJtcy4KCkNvcHlyaWdodCDCqSAyMDA1LTIwMDggU3By
-b3V0ZWQsIFBoaWxpcCBEb3cuIEFsbCByaWdodHMgcmVzZXJ2ZWQuCgpodHRwOi8vam91cm5sZXIuY29t
-A</bytes>
+																	<bytes key="NS.bytes">Sm91cm5sZXJBZ2FpbgpCeSBDaHJpcyBSYXZlbnNjcm9mdAoKQSB2ZXJ5IG1vZGVzdCBidWlsZCBvZiB0
+aGUgYXdlc29tZSBKb3VybmxlcgpCeSBQaGlsaXAgRG93CgpOb3RlOiBBbGwgSSBkaWQgd2FzOgoKCeKA
+oglSZWJ1aWxkIEpvdXJubGVyIHRvIG1ha2Ugc3VyZSB0aGF0IGl0IChzb21ld2hhdCkgd29ya3Mgd2l0
+aCBMaW9uIGFuZCBNb3VudGFpbiBMaW9uCgnigKIJQWRkIHN1cHBvcnQgZm9yIExpb24gRnVsbCBTY3Jl
+ZW4gbW9kZQoJ4oCiCU1ha2Ugc3VyZSB0aGUgYXBwbGljYXRpb24gdGhpbmtzIG9mIGl0c2VsZiBhcyBm
+dWxseSBsaWNlbnNlZAoKLUNocmlzCgpOb3csIHRvIHRoZSBhY2tub3dsZWRnbWVudHMgd3JpdHRlbiBi
+eSBQaGlsaXAgRG93IGhpbXNlbGYgKGRvbid0IGZvcmdldCEgSGUgY3JlYXRlZCBKb3Vybmxlciwgbm90
+IG1lKQoKTWFueSB0aGFua3MgdG8gbWFueSBpbmRpdmlkdWFscyBmb3IgdGhlaXIgaWRlYXMsIHN1cHBv
+cnQsIGNvbnRyaWJ1dGlvbnMgYW5kIHB1YmxpY2x5IGF2YWlsYWJsZSB3b3JrLgoKSm91cm5sZXIgdXNl
+cyB0aGUgZm9sbG93aW5nIG9wZW4gc291cmNlIHNvZnR3YXJlOgoKCeKAoglSQlNwbGl0VmlldyBieSBS
+YWluZXIgQnJvY2tlcmhvZmYKCeKAoglMSktpdCBieSBCZW5qYW1pbiBQZXRlciBSYWdoZWIKCeKAoglJ
+RDMgRnJhbWV3b3JrIGJ5IENocmlzIERyZXcKCeKAoglYTUxSUENDb2NvYSBieSBCcmVudCBTaW1tb25z
+CgnigKIJQ1VSTEhhbmRsZStleHRyYXMgYnkgRGFuIFdvb2QKCeKAoglUaGUgTEFNRSBlbmNvZGVyIGJ5
+IHRoZSBsYW1lIGdyb3VwIGF0IG1wM2Rldi5vcmcKCeKAoglUaGUgTEFNRSBGcmFtZXdvcmsgYW5kIFF1
+aWNrdGltZSBDb21wb25lbnQgYnkgTHlubiBQeWUKCeKAoglOREFsaWFzIGJ5IE5hdGhhbiBEYXkKCeKA
+oglLRkFwcGxlU2NyaXB0IEFkZGl0aW9ucyBieSBLZW4gRmVycnkKCeKAoglpTWVkaWFCcm93c2VyIGJ5
+IEdyZWcgSHVsYW5kcyBhbmQgdGhlIGNyZXcKCeKAoglMMGlQb2QgYnkgRW1hbnVlbGUgVnVsY2FubwoJ
+4oCiCUNvY29hU2VxdWVuY2VHcmFiYmVyIGJ5IFRpbSBPbWVybmljawoJ4oCiCVNwYXJrbGUgZnJhbWV3
+b3JrIGJ5IEFuZHkgTWF0dXNjaGFrCgnigKIJQ29vbCB3aW5kb3dzIGFuZCBvdGhlciB2aXN1YWwgY2Fu
+ZHkgYnkgTWF0dCBHZW1tZWxsCgnigKIJTW9yZSBjb29sIHdpbmRvd3MgYW5kIGNhbmR5IGJ5IENoYWQg
+V2VpZGVyCgnigKIJTVVQaG90b1ZpZXcgYnkgQmxha2UgU2VlbHkKCeKAoglUaGUgUGFudG9taW1lIGZy
+YW1ld29yayBieSBMdWRvdmljIE1hcmNvdHRlCgnigKIJVUtLUXVldWUgYnkgTS4gVWxpIEt1c3RlcmVy
+CgnigKIJR1RSZXNvdXJjZUZvcmsgYnkgSm9uYXRoYW4gR3J5bnNwYW4KCeKAoglLQldvcmRDb3VudGlu
+Z1RleHRTdG9yYWdlIGJ5IEtlaXRoIEJsb3VudAoKQSB2ZXJ5IHNwZWNpYWwgdGhhbmtzIHRvIHRoZSBm
+b2xsb3dpbmcgZm9yIHRoZWlyIGNvbnRyaWJ1dGlvbnM6IAoKVHJhbnNsYXRvcnMKCeKAoglEYW5pc2gg
+YnkgUHJlYmVuIE5pZWxzZW4gYW5kIFRva2UgRWJiZXNlbgoJ4oCiCUdlcm1hbiBieSBBbmRyZWFzIEjD
+pG5lIGFuZCBSZWluZXIgQmF1cgoJ4oCiCUFkZGl0aW9uYWwgbG9jYWxpemF0aW9ucyBhcmUgZm9ydGhj
+b21pbmcKCldlYiBQYWdlOiBFdmFuIEFnZWUKSm91cm5sZXIgSWNvbjogTWlrZSBSb2hkZQpEaXNrIElt
+YWdlOiBLZXZpbiBWYWVzZW4KCklkZWFzLCBCZXRhIFRlc3RlcnMgYW5kIENvbnRyaWJ1dG9ycwoJ4oCi
+CVNhdmFubmEKCeKAoglUZXJyeSBIYXRtYWtlcgoJ4oCiCUpheSBTaW1zCgnigKIJQW5uZWxpZXNlIEFt
+YWNoZXIKCeKAoglLZWl0YSBFbmRvCgnigKIJTWFydGluIEthaXNlcgoJ4oCiCVJlaW5lciBCYXVyCgni
+gKIJUmVpbmFyZCBTY2htaXR6CgnigKIJU3RldmVuIEpheSBDb2hlbgoJ4oCiCUdyw6lnb2lyZSBEZWx1
+YnJpYQoJ4oCiCWNvcm11bGxpb25AbWFjLmNvbQoJ4oCiCUFteSBVbnJ1aAoJ4oCiCVRvbnkgU3RpbnNv
+bgoJ4oCiCU5pa29sYXMgTGF1ZmVyLUVkZWwKCeKAoglNaWtlIFdlbGZsCgnigKIJSm9zw6kgRmVybmFu
+ZG8gSGVycmVyYQoJ4oCiCUFwYXJhaml0YSBGaXNobWFuCgnigKIJQWRhbSBCZWxsCgpMZWdhbCAKSm91
+cm5sZXIgY29tZXMgd2l0aCBubyB3YXJyYW50eSwgbmVpdGhlciBleHByZXNzZWQgbm9yIGltcGxpZWQu
+IEhhdmUgZnVuIGFuZCBkb24ndCBzdWUgbWUuCgpDb21tZXJjaWFsIGRpc3RyaWJ1dGlvbiBvZiBKb3Vy
+bmxlciBpcyByZXN0cmljdGVkLiBQbGVhc2UgY29udGFjdCBzYWxlc0Bqb3Vybmxlci5jb20gZm9yIGxp
+Y2Vuc2luZyB0ZXJtcy4KCkNvcHlyaWdodCDCqSAyMDA1LTIwMDggU3Byb3V0ZWQsIFBoaWxpcCBEb3cu
+IEFsbCByaWdodHMgcmVzZXJ2ZWQuCgpodHRwOi8vam91cm5sZXIuY29tA</bytes>
 																</object>
 																<array class="NSMutableArray" key="NSAttributes">
 																	<dictionary>
@@ -212,9 +232,9 @@ A</bytes>
 																	<dictionary>
 																		<reference key="NSFont" ref="50408292"/>
 																		<object class="NSParagraphStyle" key="NSParagraphStyle">
-																			<int key="NSAlignment">4</int>
 																			<double key="NSHeadIndent">36</double>
 																			<double key="NSDefaultTabInterval">36</double>
+																			<double key="NSTighteningFactorForTruncation">0.05000000074505806</double>
 																			<array key="NSTabStops">
 																				<object class="NSTextTab" id="304053496">
 																					<double key="NSLocation">11</double>
@@ -222,6 +242,19 @@ A</bytes>
 																				<object class="NSTextTab" id="384412161">
 																					<double key="NSLocation">36</double>
 																				</object>
+																			</array>
+																			<int key="NSWritingDirection">1</int>
+																		</object>
+																	</dictionary>
+																	<dictionary>
+																		<reference key="NSFont" ref="50408292"/>
+																		<object class="NSParagraphStyle" key="NSParagraphStyle">
+																			<int key="NSAlignment">4</int>
+																			<double key="NSHeadIndent">36</double>
+																			<double key="NSDefaultTabInterval">36</double>
+																			<array key="NSTabStops">
+																				<reference ref="304053496"/>
+																				<reference ref="384412161"/>
 																			</array>
 																			<array key="NSTextLists">
 																				<object class="NSTextList">
@@ -752,18 +785,18 @@ A</bytes>
 																	</dictionary>
 																</array>
 																<object class="NSMutableData" key="NSAttributeInfo">
-																	<bytes key="NS.bytes">sQEAlgYBTwCDAQIBAy4EGQUmALsCBqYBABIHFwAqCBgJEwo</bytes>
+																	<bytes key="NS.bytes">dQCvAgGZAQCWBgJPAIMBAwEELgUZBiYAuwIHpgEAEggXACoJGAoTCw</bytes>
 																</object>
 																<nil key="NSDelegate"/>
 															</object>
 															<array class="NSMutableArray" key="NSTextContainers">
 																<reference ref="1012408885"/>
 															</array>
-															<int key="NSLMFlags">6</int>
+															<int key="NSLMFlags">38</int>
 															<nil key="NSDelegate"/>
 														</object>
 														<reference key="NSTextView" ref="1030702977"/>
-														<double key="NSWidth">303</double>
+														<double key="NSWidth">314</double>
 														<int key="NSTCFlags">1</int>
 													</object>
 													<object class="NSTextViewSharedData" key="NSSharedData">
@@ -802,12 +835,13 @@ A</bytes>
 													</object>
 													<int key="NSTVFlags">6</int>
 													<string key="NSMaxSize">{314, 10000000}</string>
-													<string key="NSMinize">{303, 240}</string>
+													<string key="NSMinize">{314, 240}</string>
 													<nil key="NSDelegate"/>
 												</object>
 											</array>
-											<string key="NSFrame">{{1, 1}, {303, 240}}</string>
+											<string key="NSFrame">{{1, 1}, {314, 240}}</string>
 											<reference key="NSSuperview" ref="681481965"/>
+											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="1030702977"/>
 											<reference key="NSDocView" ref="1030702977"/>
 											<reference key="NSBGColor" ref="936875862"/>
@@ -840,19 +874,24 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<object class="NSScroller" id="57579726">
 											<reference key="NSNextResponder" ref="681481965"/>
 											<int key="NSvFlags">256</int>
-											<string key="NSFrame">{{304, 1}, {11, 240}}</string>
+											<string key="NSFrame">{{301, 1}, {14, 240}}</string>
 											<reference key="NSSuperview" ref="681481965"/>
+											<reference key="NSWindow"/>
 											<bool key="NSEnabled">YES</bool>
+											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 											<int key="NSsFlags">256</int>
 											<reference key="NSTarget" ref="681481965"/>
 											<string key="NSAction">_doScroller:</string>
-											<double key="NSPercent">0.24615384638309479</double>
+											<double key="NSPercent">0.20287404902789519</double>
 										</object>
 										<object class="NSScroller" id="467165908">
 											<reference key="NSNextResponder" ref="681481965"/>
 											<int key="NSvFlags">-2147483392</int>
 											<string key="NSFrame">{{-100, -100}, {87, 18}}</string>
 											<reference key="NSSuperview" ref="681481965"/>
+											<reference key="NSWindow"/>
+											<reference key="NSNextKeyView" ref="436081782"/>
+											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 											<int key="NSsFlags">257</int>
 											<reference key="NSTarget" ref="681481965"/>
 											<string key="NSAction">_doScroller:</string>
@@ -862,24 +901,32 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</array>
 									<string key="NSFrame">{{163, -1}, {316, 242}}</string>
 									<reference key="NSSuperview" ref="435396766"/>
-									<reference key="NSNextKeyView" ref="436081782"/>
+									<reference key="NSWindow"/>
+									<reference key="NSNextKeyView" ref="467165908"/>
 									<int key="NSsFlags">133202</int>
 									<reference key="NSVScroller" ref="57579726"/>
 									<reference key="NSHScroller" ref="467165908"/>
 									<reference key="NSContentView" ref="436081782"/>
 									<bytes key="NSScrollAmts">AAAAAAAAAAAAAAAAQMAAAA</bytes>
+									<double key="NSMinMagnification">0.25</double>
+									<double key="NSMaxMagnification">4</double>
+									<double key="NSMagnification">1</double>
 								</object>
 							</array>
 							<string key="NSFrameSize">{479, 240}</string>
 							<reference key="NSSuperview" ref="415153892"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="19709078"/>
 							<string key="NSClassName">PDGradientView</string>
 							<string key="NSExtension">NSView</string>
 						</object>
 					</array>
 					<string key="NSFrameSize">{479, 240}</string>
 					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
+					<reference key="NSNextKeyView" ref="435396766"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1058}}</string>
 				<string key="NSMinSize">{213, 129}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -921,19 +968,19 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="941864623"/>
-						<reference key="destination" ref="9922507"/>
-					</object>
-					<int key="connectionID">19</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">aboutText</string>
 						<reference key="source" ref="9922507"/>
 						<reference key="destination" ref="1030702977"/>
 					</object>
 					<int key="connectionID">27</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="941864623"/>
+						<reference key="destination" ref="9922507"/>
+					</object>
+					<int key="connectionID">19</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1080,12 +1127,112 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 			<nil key="sourceID"/>
 			<int key="maxID">33</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="perfomCustomMediabarItemAction:">PDMediabarItem</string>
+						<string key="runClose:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="perfomCustomMediabarItemAction:">
+							<string key="name">perfomCustomMediabarItemAction:</string>
+							<string key="candidateClassName">PDMediabarItem</string>
+						</object>
+						<object class="IBActionInfo" key="runClose:">
+							<string key="name">runClose:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/NSObject.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">PDAboutBoxController</string>
+					<string key="superclassName">NSWindowController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="doSomething:">id</string>
+						<string key="showAboutBox:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="doSomething:">
+							<string key="name">doSomething:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="showAboutBox:">
+							<string key="name">showAboutBox:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="aboutText">NSTextView</string>
+						<string key="additionalText">NSTextView</string>
+						<string key="appnameField">NSTextField</string>
+						<string key="imageView">NSImageView</string>
+						<string key="mainText">PDScrollingText</string>
+						<string key="versionField">NSTextField</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="aboutText">
+							<string key="name">aboutText</string>
+							<string key="candidateClassName">NSTextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="additionalText">
+							<string key="name">additionalText</string>
+							<string key="candidateClassName">NSTextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="appnameField">
+							<string key="name">appnameField</string>
+							<string key="candidateClassName">NSTextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="imageView">
+							<string key="name">imageView</string>
+							<string key="candidateClassName">NSImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mainText">
+							<string key="name">mainText</string>
+							<string key="candidateClassName">PDScrollingText</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="versionField">
+							<string key="name">versionField</string>
+							<string key="candidateClassName">NSTextField</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/PDAboutBoxController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">PDGradientView</string>
+					<string key="superclassName">NSView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/PDGradientView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">PDMediabarItem</string>
+					<string key="superclassName">NSButton</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/PDMediabarItem.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
 			<real value="1060" key="NS.object.0"/>
+		</object>
+		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
+			<real value="1070" key="NS.object.0"/>
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
