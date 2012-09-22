@@ -1,4 +1,11 @@
 //
+//  Journler, Again!
+//  Built but not created by Chris Ravenscroft
+//  Copyright Philip Dow / Sprouted. All rights reserved.
+//  If the application seems crappier than before, then that may be Copyright Chris Ravenscroft.
+//
+//  Original readme file follows
+//
 //  Journler
 //  Created by Philip Dow
 //  Copyright Philip Dow / Sprouted. All rights reserved.
