@@ -12,35 +12,35 @@
 }
 
 + (void)initialize;
-+ (void)drawBevel:(struct _NSRect)fp8 inFrame:(struct _NSRect)fp24 topCornerRounded:(BOOL)fp40 bottomCornerRounded:(BOOL)fp44;
-+ (struct _NSSize)sizeOfTitlebarButtons:(NSUInteger)fp8;
++ (void)drawBevel:(NSRect)fp8 inFrame:(NSRect)fp24 topCornerRounded:(BOOL)fp40 bottomCornerRounded:(BOOL)fp44;
++ (NSSize)sizeOfTitlebarButtons:(NSUInteger)fp8;
 + (float)_minXTitlebarWidgetInset:(NSUInteger)fp8;
 + (float)_maxXTitlebarWidgetInset:(NSUInteger)fp8;
-- (id)initWithFrame:(struct _NSRect)fp8 styleMask:(NSUInteger)fp24 owner:(id)fp28;
+- (id)initWithFrame:(NSRect)fp8 styleMask:(NSUInteger)fp24 owner:(id)fp28;
 - (void)_setUtilityWindow:(BOOL)fp8;
 - (void)setBottomCornerRounded:(BOOL)fp8;
 - (BOOL)bottomCornerRounded;
-- (struct _NSSize)_topCornerSize;
-- (struct _NSSize)_bottomCornerSize;
-- (void)drawRect:(struct _NSRect)fp8;
-- (void)_drawTitleBar:(struct _NSRect)fp8;
-- (void)drawWindowBackgroundRect:(struct _NSRect)fp8 level:(NSInteger)fp24;
-- (void)drawWindowBackgroundRect:(struct _NSRect)fp8;
+- (NSSize)_topCornerSize;
+- (NSSize)_bottomCornerSize;
+- (void)drawRect:(NSRect)fp8;
+- (void)_drawTitleBar:(NSRect)fp8;
+- (void)drawWindowBackgroundRect:(NSRect)fp8 level:(NSInteger)fp24;
+- (void)drawWindowBackgroundRect:(NSRect)fp8;
 - (void)drawWindowBackgroundRegion:(void *)fp8 level:(NSInteger)fp12;
 - (void)drawWindowBackgroundRegion:(void *)fp8;
 - (NSUInteger)_shadowFlags;
 - (id)contentFill;
 - (float)_minYTitlebarButtonsOffset;
 - (float)_minYTitlebarTitleOffset;
-- (struct _NSRect)_maxXminYResizeRect;
-- (struct _NSRect)_growBoxRect;
-- (void)_drawGrowBoxWithClip:(struct _NSRect)fp8;
+- (NSRect)_maxXminYResizeRect;
+- (NSRect)_growBoxRect;
+- (void)_drawGrowBoxWithClip:(NSRect)fp8;
 - (BOOL)_inactiveButtonsNeedMask;
 - (float)_minXTitlebarWidgetInset;
 - (float)_maxXTitlebarWidgetInset;
-- (struct _NSPoint)_toolbarButtonOrigin;
+- (NSPoint)_toolbarButtonOrigin;
 - (float)_windowTitlebarButtonSpacingWidth;
-- (struct _NSSize)sizeOfTitlebarToolbarButton;
+- (NSSize)sizeOfTitlebarToolbarButton;
 
 @end
 

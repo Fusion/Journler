@@ -943,56 +943,6 @@ static NSSortDescriptor *ResourceByRankSortPrototype()
 
 }
 
-#pragma mark -
-#pragma mark Audio/Video Recording
-
-- (void) sproutedVideoRecorder:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	#ifdef __DEBUG__
-	NSLog(@"%s %@",__PRETTY_FUNCTION__,path);
-	#endif
-	
-	NSArray *theEntries = [self selectedEntries];
-	if ( theEntries == nil || [theEntries count] != 1 )
-	{
-		NSBeep(); return;
-	}
-	
-	// pass the message to the cell controller
-	[entryCellController sproutedVideoRecorder:recorder insertRecording:path title:title];
-}
-
-- (void) sproutedAudioRecorder:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	#ifdef __DEBUG__
-	NSLog(@"%s %@",__PRETTY_FUNCTION__,path);
-	#endif
-	
-	NSArray *theEntries = [self selectedEntries];
-	if ( theEntries == nil || [theEntries count] != 1 )
-	{
-		NSBeep(); return;
-	}
-	
-	// pass the message to the cell controller
-	[entryCellController sproutedAudioRecorder:recorder insertRecording:path title:title];
-}
-
-- (void) sproutedSnapshot:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	#ifdef __DEBUG__
-	NSLog(@"%s %@",__PRETTY_FUNCTION__,path);
-	#endif
-	
-	NSArray *theEntries = [self selectedEntries];
-	if ( theEntries == nil || [theEntries count] != 1 )
-	{
-		NSBeep(); return;
-	}
-	
-	// pass the message to the cell controller
-	[entryCellController sproutedSnapshot:recorder insertRecording:path title:title];
-}
 
 #pragma mark -
 

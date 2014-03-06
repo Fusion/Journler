@@ -93,7 +93,7 @@
 }
 
 /*
-- (void)_drawTitleStringIn:(struct _NSRect)fp8 withColor:(id)fp24
+- (void)_drawTitleStringIn:(NSRect)fp8 withColor:(id)fp24
 {
 	NSFont *theFont = [NSFont titleBarFontOfSize:11];
 	NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:

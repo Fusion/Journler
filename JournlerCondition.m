@@ -391,7 +391,7 @@ static NSString *kAndSeparatorString = @" && ";
 		while ( ![scanner isAtEnd] ) {
 			[scanner scanUpToString:@"=" intoString:nil];
 			[scanner scanString:@"=" intoString:nil];
-			[scanner scanInt:&integerValue];
+			[scanner scanInteger:&integerValue];
 		}
 		
 		value = [NSNumber numberWithInteger:integerValue];

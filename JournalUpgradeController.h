@@ -36,7 +36,6 @@
 #import <Cocoa/Cocoa.h>
 #import <SproutedUtilities/SproutedUtilities.h>
 #import <SproutedInterface/SproutedInterface.h>
-#import <SproutedAVI/SproutedAVI.h>
 
 @class BlogPref;
 @class JournlerEntry;

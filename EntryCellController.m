@@ -1788,54 +1788,6 @@ static NSDictionary * StatusAttributes()
 }
 
 #pragma mark -
-#pragma mark Audio/Video Delegation
-
-- (void) sproutedVideoRecorder:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	if ( [self valueForKey:@"selectedEntry"] == nil )
-	{
-		NSBeep(); return;
-	}
-	
-	if ( title == nil )
-		title = [NSString stringWithFormat:@"%@ %@", [self valueForKeyPath:@"selectedEntry.title"], NSLocalizedString(@"video recording",@"")];
-	
-	[textView addFileToText:path fileName:title forceTitle:YES resourceCommand:kNewResourceForceCopy];
-}
-
-- (void) sproutedAudioRecorder:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	if ( [self valueForKey:@"selectedEntry"] == nil )
-	{
-		NSBeep(); return;
-	}
-
-	if ( title == nil )
-		title = [NSString stringWithFormat:@"%@ %@", [self valueForKeyPath:@"selectedEntry.title"], NSLocalizedString(@"audio recording",@"")];
-	
-	//kSproutedAudioSavedToiTunes
-	//kSproutedAudioSavedToTemporaryLocation
-	
-	NSInteger saveAction = [(SproutedAudioRecorder*)recorder saveAction];
-	NSInteger resourceCommand = ( saveAction == kSproutedAudioSavedToiTunes ? kNewResourceForceLink : kNewResourceForceCopy );
-	
-	[textView addFileToText:path fileName:title forceTitle:NO resourceCommand:resourceCommand];
-}
-
-- (void) sproutedSnapshot:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	if ( [self valueForKey:@"selectedEntry"] == nil )
-	{
-		NSBeep(); return;
-	}
-	
-	if ( title == nil )
-		title = [NSString stringWithFormat:@"%@ %@", [self valueForKeyPath:@"selectedEntry.title"], NSLocalizedString(@"snapshot recording",@"")];
-	
-	[textView addFileToText:path fileName:title forceTitle:YES resourceCommand:kNewResourceForceCopy];
-}
-
-#pragma mark -
 #pragma mark ResourceCell Delegation
 
 - (void) webViewController:(WebViewController*)aController appendPasteboardLink:(NSPasteboard*)pboard 
