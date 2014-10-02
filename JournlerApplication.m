@@ -72,7 +72,7 @@
 			
 			if ( [sender isKindOfClass:[NSMenuItem class]] 
 			&& ( ( [theTarget respondsToSelector:@selector(validateMenuItem:)] && ![theTarget validateMenuItem:sender] ) 
-				|| [theTarget respondsToSelector:@selector(validateUserInterfaceItem:)] && ![theTarget validateUserInterfaceItem:sender] ) )
+				|| ( [theTarget respondsToSelector:@selector(validateUserInterfaceItem:)] && ![theTarget validateUserInterfaceItem:sender] ) ) )
 			{
 				if ( [[[self mainWindow] windowController] respondsToSelector:@selector(handlesFindCommand)] && [[[self mainWindow] windowController] handlesFindCommand] )
 					theTarget = [[self mainWindow] windowController];
