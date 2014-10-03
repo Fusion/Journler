@@ -419,7 +419,7 @@ static NSSortDescriptor *FoldersByIndexSortPrototype()
 	BOOL added = YES;
 	
 	NSArray *allConditions = [theFolder allConditions:YES];
-	#ifdef __DEBUG __
+	#ifdef __DEBUG__
 	NSLog([allConditions description]);
 	#endif
 	
