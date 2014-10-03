@@ -255,7 +255,7 @@ typedef void (*JournlerWeblogInterfaceDidChoosePreferredEditorIMP)(id, SEL, id, 
 		{
 			success = NO;
 			anError = nil;
-			NSLog(@"Error sending Apple Event: %d", err);
+			NSLog(@"Error sending Apple Event: %d", (int)err);
 		}
 		else
 		{
