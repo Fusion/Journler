@@ -43,7 +43,6 @@
 #import <Sparkle/Sparkle.h>
 #import <Pantomime/Pantomime.h>
 //#import <iMediaBrowser/iMedia.h>
-#import <SproutedAVI/SproutedAVI.h>
 
 #import "JournlerJournal.h"
 #import "JournlerResource.h"

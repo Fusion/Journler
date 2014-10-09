@@ -43,7 +43,6 @@
 #import "Debug_Macros.h"
 #import "Definitions.h"
 
-#import <Message/NSMailDelivery.h>
 #import <SproutedUtilities/SproutedUtilities.h>
 
 #import "JournlerJournal.h"
@@ -582,18 +581,6 @@ extern void QTSetProcessProperty(UInt32 type, UInt32 creator, size_t size, uint8
 			forEventClass:kInternetEventClass 
 			andEventID:kAEGetURL];
 		
-	// set appwide behavior
-	// #warning not quite working -- doesn't work in 64 bit environment, so on leopard?
-	[PDTableView poseAsClass:[NSTableView class]];
-	[PDOutlineView poseAsClass:[NSOutlineView class]];
-	[PDCaseInsensitiveComboBoxCell poseAsClass:[NSComboBoxCell class]];
-	[NSTBFTextBlock poseAsClass:[NSTextBlock class]];
-	
-	//[PDPrintedView poseAsClass:[NSView class]];
-	//[PDToolbar poseAsClass:[NSToolbar class]];
-	//[PDDatePicker poseAsClass:[NSDatePicker class]];
-	//[CURLHandle curlHelloSignature:@"xxx" acceptAll:YES];
-	
 	[NSDateFormatter setDefaultFormatterBehavior:NSDateFormatterBehavior10_4];
 	[NSNumberFormatter setDefaultFormatterBehavior:NSNumberFormatterBehavior10_4];
 	
@@ -3034,83 +3021,6 @@ bail:
 }
 
 #pragma mark -
-#pragma mark Make a Recording
-
-- (IBAction) recordAudio:(id)sender
-{
-	// convert over some of the user default values (2.5.4 -> 2.5.5)
-	if ( [[NSUserDefaults standardUserDefaults] stringForKey:@"DefaultAlbum"] == nil )
-		[[NSUserDefaults standardUserDefaults] setObject:[[NSUserDefaults standardUserDefaults] stringForKey:@"Default Album"] 
-				forKey:@"DefaultAlbum"];
-	if ( [[NSUserDefaults standardUserDefaults] stringForKey:@"DefaultArtist"] == nil )
-		[[NSUserDefaults standardUserDefaults] setObject:[[NSUserDefaults standardUserDefaults] stringForKey:@"Default Artist"] 
-				forKey:@"DefaultArtist"];
-	if ( [[NSUserDefaults standardUserDefaults] stringForKey:@"DefaultPlaylist"] == nil )
-		[[NSUserDefaults standardUserDefaults] setObject:[[NSUserDefaults standardUserDefaults] stringForKey:@"Default Playlist"] 
-				forKey:@"DefaultPlaylist"];
-	
-	// note the recording title and date
-	NSString *recordingTitle;
-	NSCalendarDate *recordingDate;
-	
-	JournlerEntry *theGoodEntry = nil;
-	id theGoodTarget = [NSApp targetForAction:@selector(entryForRecording:) to:nil from:self];
-	
-	if ( theGoodTarget != nil && ( ( theGoodEntry = [theGoodTarget entryForRecording:self] ) != nil ) )
-	{
-		recordingTitle = [theGoodEntry valueForKey:@"title"];
-		recordingDate = [theGoodEntry valueForKey:@"calDate"];
-	}
-	else
-	{
-		recordingTitle = NSLocalizedString(@"untitled title",@"");
-		recordingDate = [NSCalendarDate calendarDate];
-	}
-	
-	NSDictionary *recordingAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
-			recordingTitle, kSproutedAudioRecordingTitleKey,
-			recordingDate, kSproutedAudioRecordingDateKey, nil];
-	
-	
-	[[SproutedAVIController sharedController] setDelegate:self];
-	[[SproutedAVIController sharedController] showWindow:self];
-	[[[SproutedAVIController sharedController] window] setTitle:NSLocalizedString(@"Journler AVI", @"")];
-	
-	[[SproutedAVIController sharedController] setAudioRecordingAttributes:recordingAttributes];
-	[[SproutedAVIController sharedController] recordAudio:self];
-}
-
-- (IBAction) recordVideo:(id)sender
-{
-	[[SproutedAVIController sharedController] setDelegate:self];
-	[[SproutedAVIController sharedController] showWindow:self];
-	[[[SproutedAVIController sharedController] window] setTitle:NSLocalizedString(@"Journler AVI", @"")];
-	[[SproutedAVIController sharedController] recordVideo:self];
-}
-
-- (IBAction) captureSnapshot:(id)sender
-{
-	[[SproutedAVIController sharedController] setDelegate:self];
-	[[SproutedAVIController sharedController] showWindow:self];
-	[[[SproutedAVIController sharedController] window] setTitle:NSLocalizedString(@"Journler AVI", @"")];
-	[[SproutedAVIController sharedController] takeSnapshot:self];
-}
-
-#pragma mark -
-
-- (NSNumber*) validateYourself:(SproutedAVIController*)aController
-{
-	NSBundle *framework = [NSBundle bundleWithIdentifier:@"com.sprouted.avi"];
-	NSString *executablePath = [framework executablePath];
-	
-	NSNumber *executableSize = [[[NSFileManager defaultManager] 
-			fileAttributesAtPath:executablePath 
-			traverseLink:NO]
-			objectForKey:NSFileSize];
-	
-	return executableSize;
-}
-
 #pragma mark -
 
 - (IBAction) toggleContinuousSpellcheckingAppwide:(id)sender
@@ -5833,39 +5743,7 @@ bail:
 	NSString *from = [[NSUserDefaults standardUserDefaults] objectForKey:@"IDEmail"];
 	if (from) [toFromDict setObject:from forKey:@"from"];
 	
-	BOOL success = YES;
-
-	// 1. Attempt to send a mail using the delivery framework ----------------
-
-	// Can we even use the mail framework?
-	
-	if ( wM && [NSMailDelivery hasDeliveryClassBeenConfigured]) {
-		
-		// we use error handling in case there is trouble in the NSMailDelivery framework
-
-		@try 
-		{
-			// first we try SMPT, then if that fails, we try sendmail:
-			if ( ![NSMailDelivery deliverMessage:richBody headers:toFromDict 
-					format:isMIME?NSMIMEMailFormat:NSASCIIMailFormat protocol:NSSMTPDeliveryProtocol] )
-				[NSMailDelivery deliverMessage:richBody headers:toFromDict 
-				format:isMIME?NSMIMEMailFormat:NSASCIIMailFormat protocol:NSSendmailDeliveryProtocol];
-		}
-
-		@catch (NSException *localException) 
-		{
-			NSLog(@"NSMailDelivery: an exception was raised: %@",[localException reason]);
-			success = NO;
-		}
-		@finally
-		{
-		
-		}
-	
-	}
-	else {
-		success = NO;
-	}
+	BOOL success = NO;
 	
 	// 2. Check the result here, if failure, attempt to send using nsurl ------------
 	

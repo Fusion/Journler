@@ -42,7 +42,6 @@
 #import <Cocoa/Cocoa.h>
 //#import <iMediaBrowser/iMedia.h>
 #import <SproutedInterface/SproutedInterface.h>
-#import <SproutedAVI/SproutedAVI.h>
 
 #import "TabController.h"
 

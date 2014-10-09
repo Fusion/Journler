@@ -11,7 +11,7 @@
 
 static short GetLabelNumber (short flags);
 static void SetLabelInFlags (short *flags, short labelNum);
-static OSErr FSpGetPBRec(const FSSpec* fileSpec, CInfoPBRec *infoRec);
+//static OSErr FSpGetPBRec(const FSSpec* fileSpec, CInfoPBRec *infoRec);
 
 @interface NSWorkspace (PDCategories)
 

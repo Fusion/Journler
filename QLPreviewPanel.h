@@ -26,7 +26,7 @@
 + (id)sharedPreviewPanel;
 + (id)_previewPanel;
 + (BOOL)isSharedPreviewPanelLoaded;
-- (id)initWithContentRect:(struct _NSRect)fp8 styleMask:(NSUInteger)fp24 backing:(NSUInteger)fp28 defer:(BOOL)fp32;
+- (id)initWithContentRect:(NSRect)fp8 styleMask:(NSUInteger)fp24 backing:(NSUInteger)fp28 defer:(BOOL)fp32;
 - (id)initWithCoder:(id)fp8;
 - (void)dealloc;
 - (BOOL)isOpaque;
@@ -34,11 +34,11 @@
 - (BOOL)canBecomeMainWindow;
 - (BOOL)shouldIgnorePanelFrameChanges;
 - (BOOL)isOpen;
-- (void)setFrame:(struct _NSRect)fp8 display:(BOOL)fp24 animate:(BOOL)fp28;
-- (id)_subEffectsForWindow:(id)fp8 itemFrame:(struct _NSRect)fp12 transitionWindow:(id *)fp28;
-- (id)_scaleEffectForItemFrame:(struct _NSRect)fp8 transitionWindow:(id *)fp24;
+- (void)setFrame:(NSRect)fp8 display:(BOOL)fp24 animate:(BOOL)fp28;
+- (id)_subEffectsForWindow:(id)fp8 itemFrame:(NSRect)fp12 transitionWindow:(id *)fp28;
+- (id)_scaleEffectForItemFrame:(NSRect)fp8 transitionWindow:(id *)fp24;
 - (void)_invertCurrentEffect;
-- (struct _NSRect)_currentItemFrame;
+- (NSRect)_currentItemFrame;
 - (void)setAutosizesAndCenters:(BOOL)fp8;
 - (BOOL)autosizesAndCenters;
 - (void)makeKeyAndOrderFront:(id)fp8;
@@ -100,8 +100,8 @@
 - (id)forcedContentTypeUTI;
 - (void)setDocumentURLs:(id)fp8;
 - (void)setDocumentURLs:(id)fp8 preservingDisplayState:(BOOL)fp12;
-- (void)setDocumentURLs:(id)fp8 itemFrame:(struct _NSRect)fp12;
-- (void)setURLs:(id)fp8 itemFrame:(struct _NSRect)fp12;
+- (void)setDocumentURLs:(id)fp8 itemFrame:(NSRect)fp12;
+- (void)setURLs:(id)fp8 itemFrame:(NSRect)fp12;
 - (void)setAutoSizeAndCenterOnScreen:(BOOL)fp8;
 - (void)setShowsAddToiPhoto:(BOOL)fp8;
 - (void)setShowsiChatTheater:(BOOL)fp8;

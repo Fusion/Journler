@@ -73,7 +73,7 @@
 			@"New Blog", @"http://", 
 			@"Blogger", [NSString string], 
 			[NSString string], [NSString string], 
-			[NSString stringWithString:@"1"], [NSNumber numberWithInteger:-1], 
+			@"1", [NSNumber numberWithInteger:-1],
 			[NSString string], [NSString string], nil] autorelease];  /* for backwards compatbility */
 			
 	NSDictionary *defaults = [NSDictionary dictionaryWithObjects:objects forKeys:keys];

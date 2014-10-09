@@ -19,30 +19,30 @@
     BOOL resizeByIncrement;
     BOOL unused;
     unsigned char tabViewCount;
-    struct _NSSize resizeParameter;
+    NSSize resizeParameter;
     int shadowState;
 }
 
 + (void)initialize;
 + (void)initTitleCell:(id)fp8 styleMask:(NSUInteger)fp12;
-+ (struct _NSRect)frameRectForContentRect:(struct _NSRect)fp8 styleMask:(NSUInteger)fp24;
-+ (struct _NSRect)contentRectForFrameRect:(struct _NSRect)fp8 styleMask:(NSUInteger)fp24;
-+ (struct _NSSize)minFrameSizeForMinContentSize:(struct _NSSize)fp8 styleMask:(NSUInteger)fp16;
-+ (struct _NSSize)minContentSizeForMinFrameSize:(struct _NSSize)fp8 styleMask:(NSUInteger)fp16;
++ (NSRect)frameRectForContentRect:(NSRect)fp8 styleMask:(NSUInteger)fp24;
++ (NSRect)contentRectForFrameRect:(NSRect)fp8 styleMask:(NSUInteger)fp24;
++ (NSSize)minFrameSizeForMinContentSize:(NSSize)fp8 styleMask:(NSUInteger)fp16;
++ (NSSize)minContentSizeForMinFrameSize:(NSSize)fp8 styleMask:(NSUInteger)fp16;
 + (float)minFrameWidthWithTitle:(id)fp8 styleMask:(NSUInteger)fp12;
 + (NSUInteger)_validateStyleMask:(NSUInteger)fp8;
-- (id)initWithFrame:(struct _NSRect)fp8 styleMask:(NSUInteger)fp24 owner:(id)fp28;
-- (id)initWithFrame:(struct _NSRect)fp8;
+- (id)initWithFrame:(NSRect)fp8 styleMask:(NSUInteger)fp24 owner:(id)fp28;
+- (id)initWithFrame:(NSRect)fp8;
 - (void)dealloc;
 - (void)finalize;
 - (void)shapeWindow;
 - (void)tileAndSetWindowShape:(BOOL)fp8;
 - (void)tile;
-- (void)drawRect:(struct _NSRect)fp8;
-- (void)_drawFrameRects:(struct _NSRect)fp8;
-- (void)drawFrame:(struct _NSRect)fp8;
-- (void)drawThemeContentFill:(struct _NSRect)fp8 inView:(id)fp24;
-- (void)drawWindowBackgroundRect:(struct _NSRect)fp8;
+- (void)drawRect:(NSRect)fp8;
+- (void)_drawFrameRects:(NSRect)fp8;
+- (void)drawFrame:(NSRect)fp8;
+- (void)drawThemeContentFill:(NSRect)fp8 inView:(id)fp24;
+- (void)drawWindowBackgroundRect:(NSRect)fp8;
 - (void)drawWindowBackgroundRegion:(void *)fp8;
 - (float)contentAlpha;
 - (void)_windowChangedKeyState;
@@ -73,10 +73,10 @@
 - (void)setTitle:(id)fp8;
 - (id)titleCell;
 - (void)initTitleCell:(id)fp8;
-- (void)setResizeIncrements:(struct _NSSize)fp8;
-- (struct _NSSize)resizeIncrements;
-- (void)setAspectRatio:(struct _NSSize)fp8;
-- (struct _NSSize)aspectRatio;
+- (void)setResizeIncrements:(NSSize)fp8;
+- (NSSize)resizeIncrements;
+- (void)setAspectRatio:(NSSize)fp8;
+- (NSSize)aspectRatio;
 - (NSUInteger)styleMask;
 - (id)representedFilename;
 - (void)setRepresentedFilename:(id)fp8;
@@ -84,8 +84,8 @@
 - (void)_setFrameNeedsDisplay:(BOOL)fp8;
 - (BOOL)frameNeedsDisplay;
 - (id)titleFont;
-- (struct _NSRect)_maxTitlebarTitleRect;
-- (struct _NSRect)titlebarRect;
+- (NSRect)_maxTitlebarTitleRect;
+- (NSRect)titlebarRect;
 - (void)_setUtilityWindow:(BOOL)fp8;
 - (void)_setNonactivatingPanel:(BOOL)fp8;
 - (void)setIsClosable:(BOOL)fp8;
@@ -93,16 +93,16 @@
 - (id)closeButton;
 - (id)minimizeButton;
 - (id)zoomButton;
-- (struct _NSSize)miniaturizedSize;
+- (NSSize)miniaturizedSize;
 - (void)_clearDragMargins;
 - (void)_resetDragMargins;
 - (void)setTitle:(id)fp8 andDefeatWrap:(BOOL)fp12;
-- (struct _NSRect)frameRectForContentRect:(struct _NSRect)fp8 styleMask:(NSUInteger)fp24;
-- (struct _NSRect)contentRectForFrameRect:(struct _NSRect)fp8 styleMask:(NSUInteger)fp24;
-- (struct _NSSize)minFrameSizeForMinContentSize:(struct _NSSize)fp8 styleMask:(NSUInteger)fp16;
-- (struct _NSRect)dragRectForFrameRect:(struct _NSRect)fp8;
-- (struct _NSRect)contentRect;
-- (struct _NSSize)minFrameSize;
+- (NSRect)frameRectForContentRect:(NSRect)fp8 styleMask:(NSUInteger)fp24;
+- (NSRect)contentRectForFrameRect:(NSRect)fp8 styleMask:(NSUInteger)fp24;
+- (NSSize)minFrameSizeForMinContentSize:(NSSize)fp8 styleMask:(NSUInteger)fp16;
+- (NSRect)dragRectForFrameRect:(NSRect)fp8;
+- (NSRect)contentRect;
+- (NSSize)minFrameSize;
 
 @end
 
