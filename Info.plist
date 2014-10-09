@@ -230,21 +230,21 @@
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
-	<string>JournlerAgain</string>
+	<string>Journler</string>
 	<key>CFBundleHelpBookFolder</key>
 	<string>Journler Help Files</string>
 	<key>CFBundleHelpBookName</key>
 	<string>JournlerHelp</string>
 	<key>CFBundleIconFile</key>
-	<string>JournlerAgain</string>
+	<string>Journler</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.voilaweb.osx.journleragain</string>
+	<string>com.phildow.journler</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.7b</string>
+	<string>2.7c</string>
 	<key>CFBundleSignature</key>
 	<string>JRLA</string>
 	<key>CFBundleURLTypes</key>
@@ -261,7 +261,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.7b2</string>
+	<string>2.7c</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.productivity</string>
 	<key>NSAppleScriptEnabled</key>

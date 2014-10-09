@@ -309,7 +309,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="477134382">
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">272629760</int>
-								<string key="NSContents">JournlerAgain encountered errors while loading your journal. Some of your entries, folders or blog settings may be corrupt.</string>
+								<string key="NSContents">Journler encountered errors while loading your journal. Some of your entries, folders or blog settings may be corrupt.</string>
 								<reference key="NSSupport" ref="20467334"/>
 								<reference key="NSControlView" ref="183643368"/>
 								<object class="NSColor" key="NSBackgroundColor">

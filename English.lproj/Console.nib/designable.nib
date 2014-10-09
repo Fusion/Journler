@@ -41,7 +41,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{293, 240}, {510, 214}}</string>
 				<int key="NSWTFlags">-260571136</int>
-				<string key="NSWindowTitle">JournlerAgain Console</string>
+				<string key="NSWindowTitle">Journler Console</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<object class="NSMutableString" key="NSViewClass">
 					<characters key="NS.bytes">View</characters>

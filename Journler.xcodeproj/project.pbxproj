@@ -332,7 +332,7 @@
 		728878E80CCA93F000733960 /* DropBox.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E30CCA93F000733960 /* DropBox.icns */; };
 		728878E90CCA93F000733960 /* Entry.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E40CCA93F000733960 /* Entry.icns */; };
 		728878EA0CCA93F000733960 /* JADUID.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E50CCA93F000733960 /* JADUID.icns */; };
-		728878EB0CCA93F000733960 /* JournlerAgain.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E60CCA93F000733960 /* JournlerAgain.icns */; };
+		728878EB0CCA93F000733960 /* Journler.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E60CCA93F000733960 /* Journler.icns */; };
 		728878F30CCA94FA00733960 /* JournalPList.xml in Resources */ = {isa = PBXBuildFile; fileRef = 728878EE0CCA94FA00733960 /* JournalPList.xml */; };
 		728878F40CCA94FA00733960 /* defaults.xml in Resources */ = {isa = PBXBuildFile; fileRef = 728878EF0CCA94FA00733960 /* defaults.xml */; };
 		728878F50CCA94FA00733960 /* TrashCollection.xml in Resources */ = {isa = PBXBuildFile; fileRef = 728878F00CCA94FA00733960 /* TrashCollection.xml */; };
@@ -973,7 +973,7 @@
 		728878E30CCA93F000733960 /* DropBox.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DropBox.icns; sourceTree = "<group>"; };
 		728878E40CCA93F000733960 /* Entry.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Entry.icns; sourceTree = "<group>"; };
 		728878E50CCA93F000733960 /* JADUID.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = JADUID.icns; sourceTree = "<group>"; };
-		728878E60CCA93F000733960 /* JournlerAgain.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = JournlerAgain.icns; sourceTree = "<group>"; };
+		728878E60CCA93F000733960 /* Journler.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Journler.icns; sourceTree = "<group>"; };
 		728878EC0CCA94D300733960 /* English */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = English; path = English.lproj/DefaultJournal.zip; sourceTree = "<group>"; };
 		728878EE0CCA94FA00733960 /* JournalPList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JournalPList.xml; sourceTree = "<group>"; };
 		728878EF0CCA94FA00733960 /* defaults.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = defaults.xml; sourceTree = "<group>"; };
@@ -1086,7 +1086,7 @@
 		72EE33EE0E2A84B60096A312 /* Journler QuickLook.qlgenerator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Journler QuickLook.qlgenerator"; sourceTree = "<group>"; };
 		72FBA6DD0D57E2FB008317E5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = English; path = English.lproj/LicenseFull.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* JournlerAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournlerAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* Journler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1190,7 +1190,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* JournlerAgain.app */,
+				8D1107320486CEB800E47090 /* Journler.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1215,7 +1215,7 @@
 			children = (
 				7288700C0CC7ECFC00733960 /* Definitions.h */,
 				7288700D0CC7ECFC00733960 /* Debug_Macros.h */,
-				32CA4F630368D1EE00C91783 /* JournlerAgain_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* Journler_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -2037,7 +2037,7 @@
 				728878E30CCA93F000733960 /* DropBox.icns */,
 				728878E40CCA93F000733960 /* Entry.icns */,
 				728878E50CCA93F000733960 /* JADUID.icns */,
-				728878E60CCA93F000733960 /* JournlerAgain.icns */,
+				728878E60CCA93F000733960 /* Journler.icns */,
 			);
 			name = "File Icons";
 			sourceTree = "<group>";
@@ -2205,9 +2205,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* JournlerAgain */ = {
+		8D1107260486CEB800E47090 /* Journler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "JournlerAgain" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Journler" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -2220,10 +2220,10 @@
 			);
 			dependencies = (
 			);
-			name = JournlerAgain;
+			name = Journler;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Journler;
-			productReference = 8D1107320486CEB800E47090 /* JournlerAgain.app */;
+			productReference = 8D1107320486CEB800E47090 /* Journler.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2234,7 +2234,7 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "JournlerAgain" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Journler" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -2250,7 +2250,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* JournlerAgain */,
+				8D1107260486CEB800E47090 /* Journler */,
 			);
 		};
 /* End PBXProject section */
@@ -2334,7 +2334,7 @@
 				728878E80CCA93F000733960 /* DropBox.icns in Resources */,
 				728878E90CCA93F000733960 /* Entry.icns in Resources */,
 				728878EA0CCA93F000733960 /* JADUID.icns in Resources */,
-				728878EB0CCA93F000733960 /* JournlerAgain.icns in Resources */,
+				728878EB0CCA93F000733960 /* Journler.icns in Resources */,
 				729854520CD292F600BB4A53 /* DefaultJournal.zip in Resources */,
 				728878F30CCA94FA00733960 /* JournalPList.xml in Resources */,
 				728878F40CCA94FA00733960 /* defaults.xml in Resources */,
@@ -3340,7 +3340,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = JournlerAgain_Prefix.pch;
+				GCC_PREFIX_HEADER = Journler_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -3363,7 +3363,7 @@
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = JournlerAgain_Prefix.pch;
+				GCC_PREFIX_HEADER = Journler_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -3404,7 +3404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "JournlerAgain" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Journler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -3413,7 +3413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "JournlerAgain" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Journler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
