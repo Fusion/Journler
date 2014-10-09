@@ -70,11 +70,8 @@ If you find unaccredited code or improperly used licenses, please let me know.
 //
 //	1. SproutedUtilities
 //	2. SproutedInterface
-//	3. SproutedAVI
 //
-//	Journler relies on a three additional frameworks from Sprouted. SproutedAVI handled\s
-//	audio-visual input and is already available at github. The Utilities and
-//	Interface frameworks are forthcoming.
+//	Journler relies on a three additional frameworks from Sprouted.
 //
 //	Initially I thought it wise to collect generic code used in Journler into these two
 //	separate frameworks to improve their re-usability. I no longer believe this was 

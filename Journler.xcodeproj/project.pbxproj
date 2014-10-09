@@ -1072,7 +1072,7 @@
 		72A8C3E80DA284F3001B4A07 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Condition_105.nib; sourceTree = "<group>"; };
 		72BBEE49143128FA005204D7 /* CHEmbeddedMediaQuicklookObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHEmbeddedMediaQuicklookObject.h; sourceTree = "<group>"; };
 		72BBEE4A143128FA005204D7 /* CHEmbeddedMediaQuicklookObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHEmbeddedMediaQuicklookObject.m; sourceTree = "<group>"; };
-		72D1248913D51B01002202F1 /* 2.6 Changelog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "2.6 Changelog.rtf"; sourceTree = "<group>"; };
+		72D1248913D51B01002202F1 /* Changelog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Changelog.rtf; sourceTree = "<group>"; };
 		72D124F313D5F9EB002202F1 /* 2.6 Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "2.6 Notes.rtf"; sourceTree = "<group>"; };
 		72D2A2630CD66CB20065F4EC /* JournlerResourceMediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerResourceMediaController.h; sourceTree = "<group>"; };
 		72D2A2640CD66CB20065F4EC /* JournlerResourceMediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerResourceMediaController.m; sourceTree = "<group>"; };
@@ -1199,7 +1199,7 @@
 			isa = PBXGroup;
 			children = (
 				7220B855146B206100CBFE76 /* README.txt */,
-				72D1248913D51B01002202F1 /* 2.6 Changelog.rtf */,
+				72D1248913D51B01002202F1 /* Changelog.rtf */,
 				72D124F313D5F9EB002202F1 /* 2.6 Notes.rtf */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -2232,7 +2232,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Journler" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3344,8 +3344,9 @@
 				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = "10.7";
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Journler;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -3368,7 +3369,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = "10.7";
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Journler;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
