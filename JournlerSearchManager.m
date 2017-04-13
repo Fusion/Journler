@@ -361,7 +361,7 @@ static NSString *referenceIndexFile = @"Index References";
 			{
 				NSString *uti = [[NSWorkspace sharedWorkspace] UTIForFile:originalPath];
 				
-				// note the path and uti for the file if search debug is abled
+				// note the path and uti for the file if search debug is enabled
 				if ( [[NSUserDefaults standardUserDefaults] boolForKey:@"JournlerSearchDebug"] )
 					NSLog(@"%s - indexing file %@, uti: %@", __PRETTY_FUNCTION__, originalPath, uti); 
 				
