@@ -249,7 +249,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="241119821">
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">272760832</int>
-								<string key="NSContents">Please take a moment to read about JournlerAgain's new license</string>
+								<string key="NSContents">Please take a moment to read about Journler's new license</string>
 								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="560962878"/>
 								<reference key="NSBackgroundColor" ref="972130720"/>

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		721DE49D0DD2AC5700AB7438 /* SproutedAVI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721DE49C0DD2AC5700AB7438 /* SproutedAVI.framework */; };
-		721DE49F0DD2AC5A00AB7438 /* SproutedAVI.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 721DE49C0DD2AC5700AB7438 /* SproutedAVI.framework */; };
 		726EC0770CCC512D008AE420 /* SmallEntryIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 726EC0570CCC512C008AE420 /* SmallEntryIcon.png */; };
 		726EC0780CCC512D008AE420 /* SmallAltDisclosure.tif in Resources */ = {isa = PBXBuildFile; fileRef = 726EC0580CCC512C008AE420 /* SmallAltDisclosure.tif */; };
 		726EC0790CCC512D008AE420 /* SmallDisclosure.tif in Resources */ = {isa = PBXBuildFile; fileRef = 726EC0590CCC512C008AE420 /* SmallDisclosure.tif */; };
@@ -115,9 +113,7 @@
 		728865DA0CC686B600733960 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728865D70CC686B600733960 /* QuartzCore.framework */; };
 		728868D40CC686E000733960 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728868C80CC686E000733960 /* AddressBook.framework */; };
 		728868D50CC686E000733960 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728868C90CC686E000733960 /* CoreServices.framework */; };
-		728868D60CC686E000733960 /* Message.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728868CA0CC686E000733960 /* Message.framework */; };
 		728868D70CC686E000733960 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728868CB0CC686E000733960 /* Security.framework */; };
-		728868D90CC686E000733960 /* vecLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728868CD0CC686E000733960 /* vecLib.framework */; };
 		728868DA0CC686E000733960 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728868CE0CC686E000733960 /* WebKit.framework */; };
 		728868DB0CC686E000733960 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728868CF0CC686E000733960 /* AudioToolbox.framework */; };
 		728868DC0CC686E000733960 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728868D00CC686E000733960 /* AudioUnit.framework */; };
@@ -336,7 +332,7 @@
 		728878E80CCA93F000733960 /* DropBox.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E30CCA93F000733960 /* DropBox.icns */; };
 		728878E90CCA93F000733960 /* Entry.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E40CCA93F000733960 /* Entry.icns */; };
 		728878EA0CCA93F000733960 /* JADUID.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E50CCA93F000733960 /* JADUID.icns */; };
-		728878EB0CCA93F000733960 /* JournlerAgain.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E60CCA93F000733960 /* JournlerAgain.icns */; };
+		728878EB0CCA93F000733960 /* Journler.icns in Resources */ = {isa = PBXBuildFile; fileRef = 728878E60CCA93F000733960 /* Journler.icns */; };
 		728878F30CCA94FA00733960 /* JournalPList.xml in Resources */ = {isa = PBXBuildFile; fileRef = 728878EE0CCA94FA00733960 /* JournalPList.xml */; };
 		728878F40CCA94FA00733960 /* defaults.xml in Resources */ = {isa = PBXBuildFile; fileRef = 728878EF0CCA94FA00733960 /* defaults.xml */; };
 		728878F50CCA94FA00733960 /* TrashCollection.xml in Resources */ = {isa = PBXBuildFile; fileRef = 728878F00CCA94FA00733960 /* TrashCollection.xml */; };
@@ -455,7 +451,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				721DE49F0DD2AC5A00AB7438 /* SproutedAVI.framework in Copy Frameworks */,
 				72976DB313D7C786008FB3EC /* ID3.framework in Copy Frameworks */,
 				7288638D0CC6867700733960 /* SproutedInterface.framework in Copy Frameworks */,
 				728862880CC6864600733960 /* SproutedUtilities.framework in Copy Frameworks */,
@@ -497,8 +492,7 @@
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* JournlerAgain_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerAgain_Prefix.pch; sourceTree = "<group>"; };
-		721DE49C0DD2AC5700AB7438 /* SproutedAVI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SproutedAVI.framework; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Journler_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Journler_Prefix.pch; sourceTree = "<group>"; };
 		7220B855146B206100CBFE76 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		726EC0570CCC512C008AE420 /* SmallEntryIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallEntryIcon.png; sourceTree = "<group>"; };
 		726EC0580CCC512C008AE420 /* SmallAltDisclosure.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SmallAltDisclosure.tif; sourceTree = "<group>"; };
@@ -605,10 +599,8 @@
 		728865D70CC686B600733960 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		728868C80CC686E000733960 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
 		728868C90CC686E000733960 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
-		728868CA0CC686E000733960 /* Message.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Message.framework; path = /System/Library/Frameworks/Message.framework; sourceTree = "<absolute>"; };
 		728868CB0CC686E000733960 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
 		728868CC0CC686E000733960 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
-		728868CD0CC686E000733960 /* vecLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vecLib.framework; path = /System/Library/Frameworks/vecLib.framework; sourceTree = "<absolute>"; };
 		728868CE0CC686E000733960 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		728868CF0CC686E000733960 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
 		728868D00CC686E000733960 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
@@ -981,7 +973,7 @@
 		728878E30CCA93F000733960 /* DropBox.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DropBox.icns; sourceTree = "<group>"; };
 		728878E40CCA93F000733960 /* Entry.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Entry.icns; sourceTree = "<group>"; };
 		728878E50CCA93F000733960 /* JADUID.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = JADUID.icns; sourceTree = "<group>"; };
-		728878E60CCA93F000733960 /* JournlerAgain.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = JournlerAgain.icns; sourceTree = "<group>"; };
+		728878E60CCA93F000733960 /* Journler.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Journler.icns; sourceTree = "<group>"; };
 		728878EC0CCA94D300733960 /* English */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = English; path = English.lproj/DefaultJournal.zip; sourceTree = "<group>"; };
 		728878EE0CCA94FA00733960 /* JournalPList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JournalPList.xml; sourceTree = "<group>"; };
 		728878EF0CCA94FA00733960 /* defaults.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = defaults.xml; sourceTree = "<group>"; };
@@ -1080,7 +1072,7 @@
 		72A8C3E80DA284F3001B4A07 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Condition_105.nib; sourceTree = "<group>"; };
 		72BBEE49143128FA005204D7 /* CHEmbeddedMediaQuicklookObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHEmbeddedMediaQuicklookObject.h; sourceTree = "<group>"; };
 		72BBEE4A143128FA005204D7 /* CHEmbeddedMediaQuicklookObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHEmbeddedMediaQuicklookObject.m; sourceTree = "<group>"; };
-		72D1248913D51B01002202F1 /* 2.6 Changelog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "2.6 Changelog.rtf"; sourceTree = "<group>"; };
+		72D1248913D51B01002202F1 /* Changelog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Changelog.rtf; sourceTree = "<group>"; };
 		72D124F313D5F9EB002202F1 /* 2.6 Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "2.6 Notes.rtf"; sourceTree = "<group>"; };
 		72D2A2630CD66CB20065F4EC /* JournlerResourceMediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournlerResourceMediaController.h; sourceTree = "<group>"; };
 		72D2A2640CD66CB20065F4EC /* JournlerResourceMediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournlerResourceMediaController.m; sourceTree = "<group>"; };
@@ -1094,7 +1086,7 @@
 		72EE33EE0E2A84B60096A312 /* Journler QuickLook.qlgenerator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Journler QuickLook.qlgenerator"; sourceTree = "<group>"; };
 		72FBA6DD0D57E2FB008317E5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = English; path = English.lproj/LicenseFull.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* JournlerAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournlerAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* Journler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1113,9 +1105,7 @@
 				728865DA0CC686B600733960 /* QuartzCore.framework in Frameworks */,
 				728868D40CC686E000733960 /* AddressBook.framework in Frameworks */,
 				728868D50CC686E000733960 /* CoreServices.framework in Frameworks */,
-				728868D60CC686E000733960 /* Message.framework in Frameworks */,
 				728868D70CC686E000733960 /* Security.framework in Frameworks */,
-				728868D90CC686E000733960 /* vecLib.framework in Frameworks */,
 				728868DA0CC686E000733960 /* WebKit.framework in Frameworks */,
 				728868DB0CC686E000733960 /* AudioToolbox.framework in Frameworks */,
 				728868DC0CC686E000733960 /* AudioUnit.framework in Frameworks */,
@@ -1124,7 +1114,6 @@
 				728868DF0CC686E000733960 /* QuickTime.framework in Frameworks */,
 				728874670CC8468D00733960 /* Carbon.framework in Frameworks */,
 				729852050CD2611500BB4A53 /* libcrypto.dylib in Frameworks */,
-				721DE49D0DD2AC5700AB7438 /* SproutedAVI.framework in Frameworks */,
 				7296CCE213D7A45D00371D50 /* ID3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1171,10 +1160,8 @@
 				728874660CC8468D00733960 /* Carbon.framework */,
 				728868C80CC686E000733960 /* AddressBook.framework */,
 				728868C90CC686E000733960 /* CoreServices.framework */,
-				728868CA0CC686E000733960 /* Message.framework */,
 				728868CB0CC686E000733960 /* Security.framework */,
 				728868CC0CC686E000733960 /* SystemConfiguration.framework */,
-				728868CD0CC686E000733960 /* vecLib.framework */,
 				728868CE0CC686E000733960 /* WebKit.framework */,
 				728868CF0CC686E000733960 /* AudioToolbox.framework */,
 				728868D00CC686E000733960 /* AudioUnit.framework */,
@@ -1203,7 +1190,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* JournlerAgain.app */,
+				8D1107320486CEB800E47090 /* Journler.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1212,7 +1199,7 @@
 			isa = PBXGroup;
 			children = (
 				7220B855146B206100CBFE76 /* README.txt */,
-				72D1248913D51B01002202F1 /* 2.6 Changelog.rtf */,
+				72D1248913D51B01002202F1 /* Changelog.rtf */,
 				72D124F313D5F9EB002202F1 /* 2.6 Notes.rtf */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -1228,7 +1215,7 @@
 			children = (
 				7288700C0CC7ECFC00733960 /* Definitions.h */,
 				7288700D0CC7ECFC00733960 /* Debug_Macros.h */,
-				32CA4F630368D1EE00C91783 /* JournlerAgain_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* Journler_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -1338,7 +1325,6 @@
 			isa = PBXGroup;
 			children = (
 				7296CCE113D7A45D00371D50 /* ID3.framework */,
-				721DE49C0DD2AC5700AB7438 /* SproutedAVI.framework */,
 				728861870CC6864000733960 /* SproutedInterface.framework */,
 				728861880CC6864000733960 /* SproutedUtilities.framework */,
 				728861840CC6864000733960 /* iMediaBrowser.framework */,
@@ -2051,7 +2037,7 @@
 				728878E30CCA93F000733960 /* DropBox.icns */,
 				728878E40CCA93F000733960 /* Entry.icns */,
 				728878E50CCA93F000733960 /* JADUID.icns */,
-				728878E60CCA93F000733960 /* JournlerAgain.icns */,
+				728878E60CCA93F000733960 /* Journler.icns */,
 			);
 			name = "File Icons";
 			sourceTree = "<group>";
@@ -2219,9 +2205,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* JournlerAgain */ = {
+		8D1107260486CEB800E47090 /* Journler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "JournlerAgain" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Journler" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -2234,10 +2220,10 @@
 			);
 			dependencies = (
 			);
-			name = JournlerAgain;
+			name = Journler;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Journler;
-			productReference = 8D1107320486CEB800E47090 /* JournlerAgain.app */;
+			productReference = 8D1107320486CEB800E47090 /* Journler.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2246,9 +2232,9 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0600;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "JournlerAgain" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Journler" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -2264,7 +2250,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* JournlerAgain */,
+				8D1107260486CEB800E47090 /* Journler */,
 			);
 		};
 /* End PBXProject section */
@@ -2348,7 +2334,7 @@
 				728878E80CCA93F000733960 /* DropBox.icns in Resources */,
 				728878E90CCA93F000733960 /* Entry.icns in Resources */,
 				728878EA0CCA93F000733960 /* JADUID.icns in Resources */,
-				728878EB0CCA93F000733960 /* JournlerAgain.icns in Resources */,
+				728878EB0CCA93F000733960 /* Journler.icns in Resources */,
 				729854520CD292F600BB4A53 /* DefaultJournal.zip in Resources */,
 				728878F30CCA94FA00733960 /* JournalPList.xml in Resources */,
 				728878F40CCA94FA00733960 /* defaults.xml in Resources */,
@@ -3343,7 +3329,7 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3354,12 +3340,13 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = JournlerAgain_Prefix.pch;
+				GCC_PREFIX_HEADER = Journler_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = JournlerAgain;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = Journler;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -3368,7 +3355,7 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3377,14 +3364,14 @@
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = JournlerAgain_Prefix.pch;
+				GCC_PREFIX_HEADER = Journler_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = JournlerAgain;
-				SDKROOT = macosx10.7;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = Journler;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -3396,7 +3383,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				SDKROOT = macosx10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
@@ -3407,14 +3396,16 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				SDKROOT = macosx10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "JournlerAgain" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Journler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -3423,7 +3414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "JournlerAgain" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Journler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

@@ -391,23 +391,6 @@
 		[self restoreStateWithDictionary:stateDictionary];
 }
 
-#pragma mark - Recording Targets
-
-- (void) sproutedVideoRecorder:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	NSLog(@"%s - **** subclasses must override ****", __PRETTY_FUNCTION__);
-}
-
-- (void) sproutedAudioRecorder:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	NSLog(@"%s - **** subclasses must override ****", __PRETTY_FUNCTION__);
-}
-
-- (void) sproutedSnapshot:(SproutedRecorder*)recorder insertRecording:(NSString*)path title:(NSString*)title
-{
-	NSLog(@"%s - **** subclasses must override ****", __PRETTY_FUNCTION__);
-}
-
 #pragma mark -
 
 - (BOOL) isFiltering

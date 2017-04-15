@@ -626,7 +626,7 @@ aWxlLiBJdCBtYXkgaGF2ZSBiZWVuIG1vdmVkIG9yIGRlbGV0ZWQuA</string>
 					<object class="IBToolTipAttribute" key="NS.object.0">
 						<string key="name">ToolTip</string>
 						<reference key="object" ref="515912021"/>
-						<string key="toolTip">Copy the file to your journal where it will be managed by JournlerAgain. You may delete the original file afterwards.</string>
+						<string key="toolTip">Copy the file to your journal where it will be managed by Journler. You may delete the original file afterwards.</string>
 					</object>
 				</object>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>

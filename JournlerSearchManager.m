@@ -17,7 +17,7 @@
 static NSString *stopWordsString = @"a all am an and any are as at be but by can could did do does etc for from goes got had has have he her him his how if in is it let me more much must my nor not now of off on or our own see set shall she should so some than that the them then there these this those though to too us was way we what when where which who why will would yes yet you";
 static NSInteger kMinTermLength = 1;
 
-#define kSearchMax 1000
+//#define kSearchMax 1000
 
 static NSString *entryIndexFile = @"Index Entries";
 static NSString *referenceIndexFile = @"Index References";
@@ -324,11 +324,11 @@ static NSString *referenceIndexFile = @"Index References";
 	}
 	
 	// support is only included for files and contacts - no urls yet although that would be very cool
-	if ( !( [aResource representsFile] || [aResource representsABRecord] ) || 
+    if ( !( [aResource representsFile] || [aResource representsABRecord] ) ||
 			( [aResource representsFile] && [[aResource valueForKey:@"uti"] isEqualToString:ResourceUnknownUTI] ) )
 		return NO;
-	
-	// the entry asscoiated with this resource
+
+	// the entry associated with this resource
 	NSURL *entryIdentifier = [anEntry URIRepresentation];
 	
 	// all the entries associated with this resource
@@ -361,7 +361,7 @@ static NSString *referenceIndexFile = @"Index References";
 			{
 				NSString *uti = [[NSWorkspace sharedWorkspace] UTIForFile:originalPath];
 				
-				// note the path and uti for the file if search debug is abled
+				// note the path and uti for the file if search debug is enabled
 				if ( [[NSUserDefaults standardUserDefaults] boolForKey:@"JournlerSearchDebug"] )
 					NSLog(@"%s - indexing file %@, uti: %@", __PRETTY_FUNCTION__, originalPath, uti); 
 				

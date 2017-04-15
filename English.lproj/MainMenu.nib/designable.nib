@@ -38,7 +38,7 @@
 				<array class="NSMutableArray" key="NSMenuItems">
 					<object class="NSMenuItem" id="790342829">
 						<reference key="NSMenu" ref="804153011"/>
-						<string key="NSTitle">JournlerAgain</string>
+						<string key="NSTitle">Journler</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSKeyEquivModMask">1048576</int>
 						<int key="NSMnemonicLoc">2147483647</int>
@@ -52,11 +52,11 @@
 						</object>
 						<string key="NSAction">submenuAction:</string>
 						<object class="NSMenu" key="NSSubmenu" id="585233915">
-							<string key="NSTitle">JournlerAgain</string>
+							<string key="NSTitle">Journler</string>
 							<array class="NSMutableArray" key="NSMenuItems">
 								<object class="NSMenuItem" id="606088540">
 									<reference key="NSMenu" ref="585233915"/>
-									<string key="NSTitle">About JournlerAgain</string>
+									<string key="NSTitle">About Journler</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="221732677"/>
@@ -163,7 +163,7 @@
 								</object>
 								<object class="NSMenuItem" id="685264451">
 									<reference key="NSMenu" ref="585233915"/>
-									<string key="NSTitle">Hide JournlerAgain</string>
+									<string key="NSTitle">Hide Journler</string>
 									<string key="NSKeyEquiv">h</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -201,7 +201,7 @@
 								</object>
 								<object class="NSMenuItem" id="315743017">
 									<reference key="NSMenu" ref="585233915"/>
-									<string key="NSTitle">Quit JournlerAgain</string>
+									<string key="NSTitle">Quit Journler</string>
 									<string key="NSKeyEquiv">q</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -2453,7 +2453,7 @@
 								</object>
 								<object class="NSMenuItem" id="60170204">
 									<reference key="NSMenu" ref="870360138"/>
-									<string key="NSTitle">JournlerAgain Browser</string>
+									<string key="NSTitle">Journler Browser</string>
 									<string key="NSKeyEquiv"></string>
 									<int key="NSKeyEquivModMask">1572864</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -2570,7 +2570,7 @@
 								</object>
 								<object class="NSMenuItem" id="990667206">
 									<reference key="NSMenu" ref="191461135"/>
-									<string key="NSTitle">About JournlerAgain and AppleScript</string>
+									<string key="NSTitle">About Journler and AppleScript</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -2595,7 +2595,7 @@
 							<array class="NSMutableArray" key="NSMenuItems">
 								<object class="NSMenuItem" id="988040959">
 									<reference key="NSMenu" ref="153143216"/>
-									<string key="NSTitle">JournlerAgain Help</string>
+									<string key="NSTitle">Journler Help</string>
 									<string key="NSKeyEquiv">?</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>

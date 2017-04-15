@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Message/NSMailDelivery.h>
+//#import <Message/NSMailDelivery.h>
 
 @interface SproutedEmailer : NSObject {
 
